@@ -1,0 +1,428 @@
+/*----------------------------------------------*/
+/* Global and Main and footer */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  font-family: "Miranda Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  text-align: center;
+}
+
+p {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  line-height: 1.6;
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+}
+
+footer {
+  font-family: "Miranda Sans", sans-serif;
+}
+
+/*----------------------------------------------*/
+/* Backgrounds */
+
+.welcome-background {
+  background-image: url("images/background-sakura.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.sushi-background {
+  background-image: url("images/cherry-blossom.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.larb-background {
+  background-image: url("images/laos-background.webp");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.pizza-background {
+  background-image: url("images/italy-scenery.avif");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/*----------------------------------------------*/
+/* Navigation Bar */
+
+.border-circle {
+  font-family: "Miranda Sans", sans-serif;
+  position: fixed;
+  top: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.nav-picture {
+  text-align: center;
+  pointer-events: auto;
+}
+
+.nav-picture a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+}
+
+.circle {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 2px solid #333;
+  overflow: hidden;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.label {
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #000000;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+}
+
+.nav-picture:hover .circle {
+  transform: scale(1.1);
+  border-color: #007bff;
+}
+
+.nav-picture:hover .label {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/*----------------------------------------------*/
+/* Welcome header */
+
+.welcome {
+  font-family: "Sekuya", system-ui;
+  font-weight: 900;
+  font-style: normal;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100vw;
+  height: 35vh;
+  user-select: none;
+}
+
+.back-text {
+  position: absolute;
+  margin: 0;
+  font-size: 9vh;
+  font-weight: 900;
+  letter-spacing: 11px;
+  color: rgba(0, 0, 0, 0.377);
+  white-space: nowrap;
+  z-index: 1;
+  user-select: none;
+}
+
+.front-text {
+  position: relative;
+  margin: 0;
+  font-size: 4vh;
+  font-weight: 300;
+  color: #111111;
+  text-transform: uppercase;
+  z-index: 2;
+}
+
+/*----------------------------------------------*/
+/* Sushi header */
+
+.sushi-welcome {
+  font-family: "Sekuya", system-ui;
+  font-weight: 900;
+  font-style: normal;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100vw;
+  height: 38vh;
+  padding: 10px;
+  color: white;
+  background-color: rgba(108, 94, 94, 0.539);
+  border-radius: 8px;
+  user-select: none;
+}
+
+.sushi-back {
+  position: absolute;
+  margin: 0;
+  font-size: 15vh;
+  font-weight: 900;
+  letter-spacing: 20px;
+  color: rgba(255, 255, 255, 0.377);
+  white-space: nowrap;
+  z-index: 1;
+  user-select: none;
+}
+
+.sushi-front {
+  position: relative;
+  margin: 0;
+  font-size: 9vh;
+  font-weight: 300;
+  letter-spacing: 10px;
+  color: #d11a2a;
+  text-transform: uppercase;
+  z-index: 2;
+}
+
+/*----------------------------------------------*/
+/* Larb header */
+
+.larb-welcome {
+  font-family: "Noto Serif Lao", serif;
+  font-weight: 900;
+  font-style: normal;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100vw;
+  height: 35vh;
+  padding: 10px;
+  color: white;
+  background-color: rgba(12, 12, 12, 0.539);
+  border-radius: 8px;
+  user-select: none;
+}
+
+.larb-back {
+  position: absolute;
+  margin: 0;
+  font-size: 20vh;
+  font-weight: 900;
+  letter-spacing: 20px;
+  color: rgba(255, 0, 0, 0.377);
+  white-space: nowrap;
+  z-index: 1;
+  user-select: none;
+}
+
+.larb-front {
+  position: relative;
+  margin: 0;
+  font-size: 8vh;
+  font-weight: 300;
+  letter-spacing: 10px;
+  color: #220e83;
+  text-transform: uppercase;
+  z-index: 2;
+}
+
+/*----------------------------------------------*/
+/* Pizza header */
+
+.pizza-welcome {
+  font-family: "Italiana", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100vw;
+  height: 38vh;
+  padding: 10px;
+  color: white;
+  background-color: rgba(203, 188, 188, 0.5);
+  border-radius: 8px;
+  user-select: none;
+}
+
+.pizza-back {
+  position: absolute;
+  margin: 0;
+  font-size: 15vh;
+  font-weight: 900;
+  letter-spacing: 20px;
+  color: rgba(12, 127, 18, 0.377);
+  white-space: nowrap;
+  z-index: 1;
+  user-select: none;
+}
+
+.pizza-front {
+  position: relative;
+  margin: 0;
+  height: 9vh;
+  font-size: 14vh;
+  font-weight: 300;
+  letter-spacing: 10px;
+  color: #b82828;
+  text-transform: uppercase;
+  z-index: 2;
+}
+
+/*----------------------------------------------*/
+/* Fun Facts Wrapper */
+
+
+#funfact-id {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.fun-fact {
+  display: block;
+  width: fit-content;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  float: none;
+
+}
+
+.circle-image {
+  margin-right: 10px;
+  float: left;
+}
+
+.circle-image img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  text-align: center;
+  z-index: 2;
+}
+
+.sliding-text {
+  display: block;
+  align-items: center;
+  max-width: 0;
+  height: 100px;
+  margin-left: 2px;
+  padding-left: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  transition: max-width 0.5s ease-in-out, padding 0.5s ease;
+}
+
+.sliding-text p {
+  margin: 0;
+  padding: 0 20px 0 30px;
+  font-family: sans-serif;
+  color: #ffffff;
+}
+
+.fun-fact:hover .sliding-text {
+  max-width: 9999px;
+  padding-left: 10px;
+}
+
+/*----------------------------------------------*/
+/* @Media */
+
+
+/* Tablet and Laptops */
+@media (min-width: 768px) and (max-width: 1440px) {
+  header {
+    min-width: 768px;
+    max-width: 1440px;
+  }
+}
+
+/* Desktop Hover */
+@media (hover: hover) {
+  .button:hover {
+    background-color: navy;
+    transform: scale(1.1);
+  }
+}
+
+/* Mobile Hover*/
+@media (hover: none) {
+  .button:active {
+    background-color: lightblue;
+  }
+}
+
+/*----------------------------------------------*/
+/* Footer & Contact */
+
+
+.contact-footer {
+  width: 100%;
+  margin-top: 50px;
+  padding: 50px 0; 
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+}
+
+
+.footer-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px; 
+  width: 100%;
+}
+
+.footer-info {
+  flex: 1;
+  min-width: 280px;
+  text-align: center;
+}
+
+.footer-info h3 {
+  margin-bottom: 15px;
+  color: #fbf4f4;
+}
+
+.contacts {
+  list-style: none;
+  padding: 0; 
+  margin-top: 20px;
+}
+
+.contacts li{
+  margin-bottom: 10px;
+  color: #ccc;
+}

@@ -1,5 +1,5 @@
 /*----------------------------------------------*/
-/* Global and Main and footer */
+/* Global and Main and footer and ahref */
 
 * {
   margin: 0;
@@ -358,6 +358,70 @@ footer {
 .fun-fact:hover .sliding-text {
   max-width: 9999px;
   padding-left: 10px;
+}
+
+/*----------------------------------------------*/
+/* Restaurant Info*/
+
+
+.restaurant-content {
+font-family: "Miranda Sans", sans-serif;
+max-width: 400px;
+margin: 20px auto;
+padding: 25px;
+border-radius: 12px;
+box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+background-color: #fff;
+text-align: center;
+}
+
+.restaurant-header h1 {
+color: #006491; /* Domino's Blue */
+}
+
+.location {
+color: #000000;
+font-style: italic;
+margin-bottom: 20px;
+}
+
+.info-section {
+text-align: left;
+margin-bottom: 20px;
+border-top: 1px solid #eee;
+padding-top: 15px;
+}
+
+.info-section h3 {
+  margin-bottom: 10px;
+}
+
+
+
+.hours-list li, .menu-item {
+display: flex;
+justify-content: space-between;
+margin-bottom: 5px;
+}
+
+.item-name { font-weight: 500; }
+.item-price { color: #e31837; font-weight: bold; }
+
+
+.button-link {
+display: inline-block;
+background-color: #006491;
+color: white;
+padding: 12px 25px;
+text-decoration: none;
+border-radius: 5px;
+font-weight: bold;
+transition: background-color 0.3s;
+margin-top: 10px;
+}
+
+.button-link:hover {
+background-color: #004a6d;
 }
 
 /*----------------------------------------------*/
